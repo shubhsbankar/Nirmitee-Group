@@ -1,0 +1,372 @@
+/* =======================
+   Global Tailwind imports
+   ======================= */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+
+
+/* =======================
+   Global Base (site theme)
+   ======================= */
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+}
+
+/* Global site tokens (MIDNIGHT THEME) — used by your sections */
+:root {
+  --brand-gradient: linear-gradient(to right, #00c6ff, #7d2ae8);
+  --radius: 0.625rem;
+
+  /* Midnight site palette */
+  --background: #0b0f19;
+  --foreground: #ffffff;
+
+  /* For utility classes that read HSL vars */
+  --muted-foreground: 215 14% 65%;     /* #9aa3b2 */
+  --primary-glow: 223 85% 76%;         /* soft blue glow */
+
+  /* Optional borders/inputs if you use Tailwind tokens elsewhere */
+  --border: 0 0% 100% / 8%;
+  --input: 0 0% 100% / 12%;
+  --ring: 240 4.9% 83.9%;
+}
+
+/* =======================
+   General animations
+   ======================= */
+@keyframes float1 { 0%{transform:translateY(0) translateX(0)} 50%{transform:translateY(-40px) translateX(20px)} 100%{transform:translateY(0) translateX(0)} }
+@keyframes float2 { 0%{transform:translateY(0) translateX(0)} 50%{transform:translateY(30px) translateX(-20px)} 100%{transform:translateY(0) translateX(0)} }
+@keyframes float3 { 0%{transform:translateY(0) translateX(0)} 50%{transform:translateY(-20px) translateX(30px)} 100%{transform:translateY(0) translateX(0)} }
+
+.animate-float1 { animation: float1 10s ease-in-out infinite; }
+.animate-float2 { animation: float2 12s ease-in-out infinite; }
+.animate-float3 { animation: float3 14s ease-in-out infinite; }
+
+/* =======================
+   ABOUT section utilities
+   ======================= */
+/* ===== Vrindavan Theme — polished ===== */
+
+/* Background */
+.bg-about {
+  background:
+    radial-gradient(1200px 320px at 50% -120px, rgba(88,101,242,.18), transparent 60%),
+    radial-gradient(900px 260px at 0% 0%, rgba(56,189,248,.12), transparent 60%),
+    linear-gradient(180deg, #0A0E1F 0%, #081225 48%, #050814 100%);
+}
+
+/* Tokens (safe fallbacks if not in tailwind theme) */
+:root {
+  --primary-glow: 265 85% 72% / 1;      /* violet */
+  --muted-foreground: 215 20% 74% / .78;/* slate-ish */
+}
+
+/* ---------- Glass / Cards ---------- */
+.glass-card {
+  border-radius: 18px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 10px 30px rgba(2,6,23,.55),
+    inset 0 1px 0 rgba(255,255,255,.04);
+  transition: box-shadow .35s ease, transform .3s ease, border-color .3s ease;
+}
+
+/* base soft glow (static) */
+.shadow-glow {
+  box-shadow:
+    0 10px 30px rgba(2,6,23,.55),
+    0 0 10px rgba(124,58,237,.28),
+    0 0 16px rgba(56,189,248,.22);
+}
+
+/* stronger glow on hover */
+.shadow-hover:hover {
+  box-shadow:
+    0 15px 45px rgba(2,6,23,.6),
+    0 0 22px rgba(124,58,237,.55),
+    0 0 30px rgba(56,189,248,.45);
+  transform: translateY(-6px) scale(1.02);
+}
+
+/* gradient halo on hover (wrap card in .glow-wrap) */
+.glow-wrap { position: relative; }
+.glow-wrap::before {
+  content: "";
+  position: absolute; inset: -1px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, rgba(90,212,255,.25), rgba(139,92,246,.25), rgba(34,211,238,.25));
+  filter: blur(18px);
+  opacity: 0; pointer-events: none; transition: opacity .4s ease;
+}
+.glow-wrap:hover::before { opacity: 1; }
+
+/* ---------- Tilt Cards ---------- */
+.about-tilt {
+  --rx: 0deg; --ry: 0deg; --hue: 220;
+  transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry));
+  will-change: transform, box-shadow, background;
+  background:
+    radial-gradient(1200px 200px at 50% 0%, hsl(var(--hue) 90% 55% / .10), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  border: 1px solid rgba(255,255,255,.06);
+  box-shadow:
+    0 10px 30px hsl(var(--hue) 90% 55% / .12),
+    inset 0 1px 0 rgba(255,255,255,.04);
+  transition: border .3s ease, box-shadow .3s ease, transform .2s ease;
+}
+.about-tilt:hover {
+  border-color: hsl(var(--hue) 90% 60% / .45);
+  box-shadow:
+    0 0 25px rgba(124,58,237,.45),
+    0 0 35px rgba(56,189,248,.35);
+}
+
+/* icon chip bg */
+.about-tilt-badge {
+  background: linear-gradient(135deg,#5ad4ff 0%,#8b5cf6 55%,#22d3ee 100%);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+/* ---------- Text utilities ---------- */
+.gradient-text {
+  background: linear-gradient(90deg,#5ad4ff,#8b5cf6,#22d3ee);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.text-primary-glow { color: hsl(var(--primary-glow)); }
+.text-muted-foreground { color: hsl(var(--muted-foreground)); }
+
+/* ---------- Entrance animations ---------- */
+@keyframes slideInLeft { from {opacity:0; transform: translateX(-24px)} to {opacity:1; transform:none} }
+@keyframes slideInRight{ from {opacity:0; transform: translateX(24px)}  to {opacity:1; transform:none} }
+.animate-slide-in-left  { animation: slideInLeft .7s cubic-bezier(.22,.61,.36,1) both; }
+.animate-slide-in-right { animation: slideInRight .7s cubic-bezier(.22,.61,.36,1) both; }
+
+/* ---------- Timeline styles ---------- */
+.timeline-line {
+  background: linear-gradient(to bottom, #5ad4ff, #8b5cf6, rgba(0,0,0,0));
+  background-size: 100% 200%;
+  filter: drop-shadow(0 0 10px rgba(138, 92, 246, 0.35));
+}
+@keyframes timelineMove { 0%{background-position:0 0} 100%{background-position:0 100%} }
+.animate-timeline { animation: timelineMove 4s linear infinite; }
+
+.progress-will-change { will-change: height, transform, box-shadow; }
+
+/* glowing timeline dot (add class .timeline-dot to your dot divs) */
+.timeline-dot {
+  position: relative;
+  background: radial-gradient(circle at 50% 50%, rgba(124,58,237,.9) 0%, rgba(124,58,237,.45) 55%, rgba(255,255,255,.08) 60%);
+  border: 3px solid rgba(255,255,255,.08);
+  box-shadow:
+    0 0 0 rgba(124,58,237,0),
+    inset 0 0 6px rgba(255,255,255,.15);
+  transition: box-shadow .35s ease, transform .25s ease;
+}
+.timeline-dot.is-active {
+  transform: scale(1.12);
+  box-shadow:
+    0 0 22px rgba(124,58,237,.85),
+    0 0 32px rgba(56,189,248,.45),
+    inset 0 0 10px rgba(255,255,255,.25);
+}
+
+/* ---------- Hover/Pointer fallbacks ---------- */
+@media (hover: none), (pointer: coarse) {
+  .about-tilt { transform: none !important; }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide-in-left,
+  .animate-slide-in-right,
+  .animate-timeline { animation: none !important; }
+  .shadow-hover:hover { transform: none !important; box-shadow: none !important; }
+}
+
+/* =======================
+   CONTACT section utilities
+   ======================= */
+.bg-contact {
+  background:
+    radial-gradient(1200px 320px at 50% -120px, rgba(99,102,241,.18), transparent 60%),
+    radial-gradient(900px 260px at 0% 0%, rgba(56,189,248,.12), transparent 60%),
+    linear-gradient(180deg, #0A0E1F 0%, #081225 48%, #050814 100%);
+}
+
+.contact-gradient-text {
+  background: linear-gradient(90deg, #3b82f6, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.contact-glass-card {
+  border-radius: 18px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(2,6,23,0.55), inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.contact-icon-badge {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 55%, #06b6d4 100%);
+}
+
+/* Buttons */
+.contact-btn {
+  background: linear-gradient(90deg, #3b82f6, #6366f1, #8b5cf6);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  transition: filter 0.3s ease;
+}
+.contact-btn:hover { filter: brightness(1.08); }
+
+.contact-whatsapp-btn {
+  background-color: #22c55e;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  transition: background-color 0.3s ease;
+}
+.contact-whatsapp-btn:hover { background-color: #16a34a; }
+
+/* Text helpers */
+.contact-text-muted { color: #9aa3b2; }
+.contact-text-glow  { color: #7aa2ff; }
+.contact-text-danger{ color: #f87171; }
+
+/* =======================
+   Tailwind token mapping
+   ======================= */
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+
+/* ==========================================================
+   SHADCN/UI VARIABLE SCOPE — ONLY inside .contact-scope
+   Wrap your contact section with className="contact-scope"
+   ========================================================== */
+.contact-scope {
+  /* These vars feed shadcn components like <Select/> */
+  --background: oklch(0.129 0.042 264.695);
+  --foreground: oklch(0.984 0.003 247.858);
+  --card: oklch(0.208 0.042 265.755);
+  --card-foreground: oklch(0.984 0.003 247.858);
+  --popover: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.984 0.003 247.858);
+  --primary: oklch(0.929 0.013 255.508);
+  --primary-foreground: oklch(0.208 0.042 265.755);
+  --secondary: oklch(0.279 0.041 260.031);
+  --secondary-foreground: oklch(0.984 0.003 247.858);
+  --muted: oklch(0.279 0.041 260.031);
+  --muted-foreground: oklch(0.704 0.04 256.788);
+  --accent: oklch(0.279 0.041 260.031);
+  --accent-foreground: oklch(0.984 0.003 247.858);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.551 0.027 264.364);
+  --radius: 0.625rem;
+}
+
+/* ---------- THEME TOKENS ---------- */
+:root {
+  --bg-deep-1: #0b1020;  /* deep navy */
+  --bg-deep-2: #070b18;
+  --card-start: #10172A;
+  --card-mid:   #0A0E1F;
+  --card-end:   #050814;
+
+  --c-cyan:    #22d3ee;  /* cyan-400-ish */
+  --c-indigo:  #818cf8;  /* indigo-400 */
+  --c-purple:  #a855f7;  /* purple-500 */
+  --c-violet:  #7c3aed;  /* violet-600 */
+  --c-white-2: rgba(255,255,255,0.85);
+  --muted:     rgba(226,232,240,0.7); /* slate-200/70 */
+}
+
+/* ---------- BACKGROUNDS ---------- */
+.bg-about {
+  background:
+    radial-gradient(60vw 60vw at 10% -10%, rgba(34,211,238,0.08), transparent 55%),
+    radial-gradient(50vw 50vw at 90% 10%, rgba(124,58,237,0.08), transparent 55%),
+    linear-gradient(180deg, var(--bg-deep-1), var(--bg-deep-2));
+}
+
+/* ---------- CARDS & EFFECTS ---------- */
+.glass-card {
+  background: linear-gradient(135deg, var(--card-start), var(--card-mid) 55%, var(--card-end));
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+}
+.shadow-glow {
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.35),
+    0 0 0 0 rgba(34,211,238,0);
+}
+.shadow-hover:hover {
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.45),
+    0 0 24px rgba(124,58,237,0.35);
+}
+
+/* small glowing emphasis text */
+.text-primary-glow {
+  color: var(--c-white-2);
+  text-shadow: 0 0 16px rgba(124,58,237,0.45);
+}
+.text-muted-foreground {
+  color: var(--muted);
+}
+
+/* gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, var(--c-cyan), var(--c-indigo), var(--c-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* tilt badge behind icons */
+.about-tilt-badge {
+  background: radial-gradient(closest-side, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* timeline highlight pulse (optional) */
+@keyframes pulseLine {
+  0% { box-shadow: 0 0 0 rgba(124,58,237,0.0); }
+  50% { box-shadow: 0 0 24px rgba(124,58,237,0.65); }
+  100% { box-shadow: 0 0 0 rgba(124,58,237,0.0); }
+}
+.pulse-highlight {
+  animation: pulseLine 2.2s ease-in-out infinite;
+}
+
+/* slide-ins for Intersection Observer blocks */
+@keyframes slideLeft { from {opacity:0; transform: translateX(-16px)} to {opacity:1; transform:none} }
+@keyframes slideRight{ from {opacity:0; transform: translateX(16px)}  to {opacity:1; transform:none} }
+.animate-slide-in-left  { animation: slideLeft .6s ease-out both; }
+.animate-slide-in-right { animation: slideRight .6s ease-out both; }
+
