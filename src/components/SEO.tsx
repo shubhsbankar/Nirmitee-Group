@@ -6,7 +6,7 @@ interface SEOProps {
   description: string;
   url: string;
   image?: string;
-  structuredData?: Record<string, any>; // optional JSON-LD
+  structuredData?: Record<string, unknown>; // optional JSON-LD
   noindex?: boolean; // safety switch if you ever need it
 }
 
