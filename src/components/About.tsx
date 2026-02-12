@@ -226,7 +226,7 @@ export default function AboutSection() {
             {/* Powerhouse */}
             <div className="glass-card p-8 border border-white/10 bg-gradient-to-br from-[#10172A] via-[#0A0E1F] to-[#050814] shadow-glow">
               <h3 className="font-montserrat font-bold text-2xl gradient-text mb-6">
-                The Powerhouse Behind 7 Ventures
+                The Powerhouse Behind 8 Ventures
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>

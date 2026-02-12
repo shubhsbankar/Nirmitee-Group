@@ -123,7 +123,7 @@ export default function ContactSection() {
                     <SelectItem value="travel">Travel &amp; Tours</SelectItem>
                     <SelectItem value="restaurant">Restaurant</SelectItem>
                     <SelectItem value="wedding">Wedding Venue</SelectItem>
-                    <SelectItem value="fashion">Fashion Clothing</SelectItem>
+                    <SelectItem value="fashion">Nirmitee Fashion</SelectItem>
                     <SelectItem value="hotel">Luxury Hotel</SelectItem>
                   </SelectContent>
                 </Select>

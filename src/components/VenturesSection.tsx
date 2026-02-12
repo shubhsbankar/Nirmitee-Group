@@ -100,6 +100,17 @@ const ventures: Venture[] = [
     imgSrc: '/ventures/gulmohar-hotel.png',
     align: 'right',
   },
+  {
+    id: 'nirmitee-fashion',
+    kicker: 'FASHION • LIFESTYLE',
+    title: 'Nirmitee Fashion',
+    blurb:
+      'Contemporary fashion and lifestyle collections that blend modern design with everyday comfort.',
+    ctaText: 'Visit Website',
+    href: 'https://fashion.nirmiteegroup.com/',
+    imgSrc: '/ventures/fashion.png',
+    align: 'left',
+  },
 ];
 
 function VentureSlide({ v, index }: { v: Venture; index: number }) {
@@ -133,7 +144,12 @@ function VentureSlide({ v, index }: { v: Venture; index: number }) {
         <p className="mb-2 text-[11px] tracking-[.2em] text-gray-500">{v.kicker}</p>
         <h3 className="text-xl md:text-[24px] leading-tight font-serif">{v.title}</h3>
         <p className="mt-3 text-[15px] leading-relaxed text-gray-700">{v.blurb}</p>
-        <a href={v.href} className="mt-5 inline-flex items-center gap-2 text-[15px] font-semibold">
+        <a
+          href={v.href}
+          className="mt-5 inline-flex items-center gap-2 text-[15px] font-semibold"
+          target={v.href.startsWith('http') ? '_blank' : undefined}
+          rel={v.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+        >
           <span className="relative after:block after:h-[2px] after:w-full after:bg-gray-900 after:mt-[6px]">
             {v.ctaText}
           </span>

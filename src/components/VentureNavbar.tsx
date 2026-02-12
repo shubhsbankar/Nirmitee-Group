@@ -14,6 +14,7 @@ const ventures = [
   { name: "Leozkate Jewellery", path: "/ventures/leozkate-jewellery" },
   { name: "Nirmittee Tours & Travels", path: "/ventures/tours-and-travels" },
   { name: "Gulmohar Hotel", path: "/ventures/gulmohar-hotel" },
+  { name: "Nirmitee Fashion", path: "https://fashion.nirmiteegroup.com/", external: true },
 ];
 
 // Per-venture branding
@@ -216,14 +217,31 @@ export default function VentureNavbar() {
             >
               <div className="bg-[#0B1221]/90 backdrop-blur-md border border-white/10 shadow-xl">
                 {ventures.map((v) => {
-                  const active = pathname === v.path;
-                  return (
+                  const active = !v.external && pathname === v.path;
+                  const commonClasses = [
+                    "block px-5 py-3 text-base transition",
+                    active ? "bg-white/10 text-cyan-300" : "hover:bg-white/10",
+                  ].join(" ");
+
+                  return v.external ? (
+                    <a
+                      key={v.name}
+                      href={v.path}
+                      role="menuitem"
+                      className={commonClasses}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {v.name}
+                    </a>
+                  ) : (
                     <Link
                       key={v.name}
                       href={v.path}
                       role="menuitem"
                       aria-current={active ? "page" : undefined}
-                      className={["block px-5 py-3 text-base transition", active ? "bg-white/10 text-cyan-300" : "hover:bg-white/10"].join(" ")}
+                      className={commonClasses}
                       onClick={() => setIsOpen(false)}
                     >
                       {v.name}
@@ -283,11 +301,29 @@ export default function VentureNavbar() {
               Our Ventures <ChevronDown size={18} />
             </summary>
             <div className="pl-4 pt-2 space-y-2">
-              {ventures.map((v) => (
-                <Link key={v.name} href={v.path} className="block py-1 hover:text-cyan-300" onClick={() => setMobileOpen(false)}>
-                  {v.name}
-                </Link>
-              ))}
+              {ventures.map((v) =>
+                v.external ? (
+                  <a
+                    key={v.name}
+                    href={v.path}
+                    className="block py-1 hover:text-cyan-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {v.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={v.name}
+                    href={v.path}
+                    className="block py-1 hover:text-cyan-300"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {v.name}
+                  </Link>
+                )
+              )}
             </div>
           </details>
 

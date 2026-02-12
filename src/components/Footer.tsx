@@ -215,6 +215,15 @@ export default function Footer() {
                 <li><Link href="/ventures/vrindavan-lawn">Vrindavan Lawn</Link></li>
                 <li><Link href="/ventures/leozkate-jewellery">Leozkate Jewellery</Link></li>
                 <li><Link href="/ventures/gulmohar-hotel">Gulmohar Hotel</Link></li>
+                <li>
+                  <a
+                    href="https://fashion.nirmiteegroup.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Nirmitee Fashion
+                  </a>
+                </li>
               </ul>
             </div>
 

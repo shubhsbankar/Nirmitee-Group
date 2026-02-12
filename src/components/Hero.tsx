@@ -57,7 +57,7 @@ export default function Hero() {
   const { ref: statsRef, inView } = useInViewOnce<HTMLDivElement>({ threshold: 0.35 });
 
   // Counters (targets based on your labels)
-  const ventures = useCounter(7, inView);
+  const ventures = useCounter(8, inView);
   const employees = useCounter(500, inView);
   const crore = useCounter(100, inView); // display as ₹{crore}Cr+
 
@@ -110,7 +110,7 @@ export default function Hero() {
 
       {/* Subheading */}
       <p className="mt-3 md:mt-4 text-lg max-w-2xl text-gray-300">
-        From real estate to restaurants, Nirmittee leads 7 successful ventures
+        From real estate to restaurants, Nirmittee leads 8 successful ventures
         under one vision.
       </p>
 
