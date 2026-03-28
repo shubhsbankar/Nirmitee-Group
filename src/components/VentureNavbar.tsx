@@ -7,12 +7,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const ventures = [
-  { name: "Nirmittee Developers", path: "/ventures/developers" },
-  { name: "Nirmittee Traders", path: "/ventures/traders" },
+  { name: "Nirmitee Developers", path: "/ventures/developers" },
+  { name: "Nirmitee Traders", path: "/ventures/traders" },
   { name: "Vrindavan Restaurant", path: "/ventures/vrindavan-restaurant" },
   { name: "Vrindavan Lawn", path: "/ventures/vrindavan-lawn" },
-  { name: "Leozkate Jewellery", path: "/ventures/leozkate-jewellery" },
-  { name: "Nirmittee Tours & Travels", path: "/ventures/tours-and-travels" },
   { name: "Gulmohar Hotel", path: "/ventures/gulmohar-hotel" },
   { name: "Nirmitee Fashion", path: "https://fashion.nirmiteegroup.com/", external: true },
 ];
@@ -26,14 +24,14 @@ const BRAND: Record<string, {
   ctaHref?: string;
 }> = {
   "/ventures/developers": {
-    label: "Nirmittee Developers",
+    label: "Nirmitee Developers",
     logo: "/images/logos/developers.png",
     home: "/ventures/developers",
     ctaText: "Get in Touch",
     ctaHref: "/contact",
   },
   "/ventures/traders": {
-    label: "Nirmittee Traders",
+    label: "Nirmitee Traders",
     logo: "/images/logos/traders.png",
     home: "/ventures/traders",
     ctaText: "Enquire",
@@ -61,7 +59,7 @@ const BRAND: Record<string, {
     ctaHref: "/ventures/leozkate-jewellery#collections",
   },
   "/ventures/tours-and-travels": {
-    label: "Nirmittee Tours & Travels",
+    label: "Nirmitee Tours & Travels",
     logo: "/images/logos/tours-travels.png",
     home: "/ventures/tours-and-travels",
     ctaText: "Plan a Trip",
@@ -77,7 +75,7 @@ const BRAND: Record<string, {
 };
 
 const GROUP_BRAND = {
-  label: "Nirmittee Group",
+  label: "Nirmitee Group",
   logo: "/images/logos/group.png",
   home: "/",
   ctaText: "Get in Touch",

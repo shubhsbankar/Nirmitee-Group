@@ -29,7 +29,7 @@
 //     const subject = `New inquiry — ${venture || "General"}`;
 
 //     await resend.emails.send({
-//       from: `Nirmittee Group <${process.env.CONTACT_FROM!}>`,
+//       from: `Nirmitee Group <${process.env.CONTACT_FROM!}>`,
 //       to: [process.env.CONTACT_TO!],
 //       replyTo: email,
 //       subject,

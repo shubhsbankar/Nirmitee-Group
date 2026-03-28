@@ -8,10 +8,8 @@ import { usePathname } from "next/navigation";
 
 const ventures = [
   { name: "Vrindavan Lawn", path: "/ventures/vrindavan-lawn" },
-  { name: "Leozkate Jewellery", path: "/ventures/leozkate-jewellery" }, // just the label
-  { name: "Nirmittee Tours & Travels", path: "/ventures/tours-and-travels" },
-  { name: "Nirmittee Developers", path: "/ventures/developers" },
-  { name: "Nirmittee Traders", path: "/ventures/traders" },
+  { name: "Nirmitee Developers", path: "/ventures/developers" },
+  { name: "Nirmitee Traders", path: "/ventures/traders" },
   { name: "Vrindavan Restaurant", path: "/ventures/vrindavan-restaurant" },
   { name: "Gulmohar Hotel", path: "/ventures/gulmohar-hotel" },
   { name: "Nirmitee Fashion", path: "https://fashion.nirmiteegroup.com/", external: true },
@@ -83,16 +81,16 @@ export default function Navbar() {
         <Link
           href="/"
           className="flex items-center gap-2 font-bold text-lg sm:text-xl"
-          aria-label="Nirmittee Group Home"
+          aria-label="Nirmitee Group Home"
         >
           <Image
             src="/logo.png"
-            alt="Nirmittee Group Logo"
+            alt="Nirmitee Group Logo"
             width={36}
             height={36}
             className="rounded-full"
           />
-          Nirmittee <span className="text-gray-300 font-light">Group</span>
+          Nirmitee <span className="text-gray-300 font-light">Group</span>
         </Link>
 
         {/* desktop menu */}

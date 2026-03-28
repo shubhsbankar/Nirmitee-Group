@@ -26,7 +26,7 @@ export default function WhyUs() {
 
       <div className="container relative mx-auto px-6">
         <h2 className="text-center text-3xl md:text-4xl font-extrabold">
-          Why Choose Nirmittee Traders?
+          Why Choose Nirmitee Traders?
         </h2>
 
         <div className="mt-14 grid gap-y-14 gap-x-10 md:grid-cols-3">

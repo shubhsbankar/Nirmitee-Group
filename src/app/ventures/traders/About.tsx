@@ -49,7 +49,7 @@ export default function AboutTraders() {
         >
           <div className="inline-block">
             <h2 className="relative text-4xl md:text-5xl font-extrabold text-white leading-tight">
-              <span className="gradient-text">About</span> Nirmittee Traders
+              <span className="gradient-text">About</span> Nirmitee Traders
               <motion.span
                 aria-hidden="true"
                 initial={{ width: 0, opacity: 0 }}
@@ -62,7 +62,7 @@ export default function AboutTraders() {
 
           <div className="mt-6 space-y-4 text-lg leading-relaxed text-muted-foreground max-w-prose">
             <p>
-              Established in 2016, Nirmittee Traders has become the leading wholesale trading
+              Established in 2016, Nirmitee Traders has become the leading wholesale trading
               company in Yavatmal, serving over <span className="text-cyan-300 font-semibold">200+</span> retail partners across Maharashtra.
               We specialize in bulk supply of FMCG products, electronics, and consumer goods.
             </p>
@@ -122,7 +122,7 @@ export default function AboutTraders() {
           <div className="relative w-full max-w-[720px] aspect-[16/10] rounded-2xl overflow-hidden glass-card shadow-[0_15px_50px_rgba(0,0,0,0.35)]">
             <Image
               src="/images/traders/about.png"
-              alt="Warehouse and inventory management at Nirmittee Traders, Yavatmal"
+              alt="Warehouse and inventory management at Nirmitee Traders, Yavatmal"
               fill
               className="object-cover"
               sizes="(min-width: 1024px) 720px, 92vw"

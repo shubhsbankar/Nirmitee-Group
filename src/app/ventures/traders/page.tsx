@@ -15,21 +15,21 @@ const pageUrl = "https://nirmiteegroup.com/ventures/traders";
 const ogImage = "https://nirmiteegroup.com/images/ventures/traders/og.jpg";
 
 export const metadata: Metadata = {
-  title: "Nirmittee Traders | Wholesale & Commodity Trading in Yavatmal",
+  title: "Nirmitee Traders | Wholesale & Commodity Trading in Yavatmal",
   description:
     "Trusted partner for bulk supply, FMCG distribution, and commodity trading in Yavatmal & Maharashtra. Competitive pricing, reliable delivery, and certified quality.",
   alternates: { canonical: pageUrl },
   openGraph: {
     type: "website",
     url: pageUrl,
-    title: "Nirmittee Traders | Wholesale & Commodity Trading in Yavatmal",
+    title: "Nirmitee Traders | Wholesale & Commodity Trading in Yavatmal",
     description:
       "B2B wholesale, commodity sourcing, FMCG distribution, logistics and warehousing.",
     images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nirmittee Traders | Wholesale & Commodity Trading in Yavatmal",
+    title: "Nirmitee Traders | Wholesale & Commodity Trading in Yavatmal",
     description:
       "Your trusted partner for bulk supply and wholesale trading across Maharashtra.",
     images: [ogImage],
@@ -42,7 +42,7 @@ export default function TradersPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": pageUrl,
-    name: "Nirmittee Traders",
+    name: "Nirmitee Traders",
     url: pageUrl,
     image: ogImage,
     description:

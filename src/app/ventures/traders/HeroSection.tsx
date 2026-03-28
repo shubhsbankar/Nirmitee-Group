@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image */}
       <Image
         src="/images/traders/hero-blur..png" // fixed double dot
-        alt="Wholesale trading background - Nirmittee Traders"
+        alt="Wholesale trading background - Nirmitee Traders"
         fill
         priority
         className="pointer-events-none select-none object-cover -z-10 opacity-50"

@@ -26,7 +26,7 @@ const ventures: Venture[] = [
   {
     id: 'developers',
     kicker: 'REAL ESTATE • CONSTRUCTION',
-    title: 'Nirmittee Developers',
+    title: 'Nirmitee Developers',
     blurb:
       'Residential and commercial developments built with modern design, transparency, and on-time delivery.',
     ctaText: 'Explore More',
@@ -37,7 +37,7 @@ const ventures: Venture[] = [
   {
     id: 'traders',
     kicker: 'COMMODITIES • DISTRIBUTION',
-    title: 'Nirmittee Traders',
+    title: 'Nirmitee Traders',
     blurb:
       'Sourcing and distribution with strong supplier networks and reliable last-mile fulfillment.',
     ctaText: 'Explore More',
@@ -81,7 +81,7 @@ const ventures: Venture[] = [
   {
     id: 'tours-travels',
     kicker: 'TRAVEL • EXPERIENCES',
-    title: 'Nirmittee Tours & Travels',
+    title: 'Nirmitee Tours & Travels',
     blurb:
       'Tailored itineraries, corporate travel, and curated experiences—end-to-end planning, ticketing, and stays.',
     ctaText: 'Explore More',
@@ -176,7 +176,7 @@ export default function VenturesSection() {
   const slides = ventures.map((v, i) => <VentureSlide v={v} index={i} key={v.id} />);
 
   return (
-    <section className="bg-[#082b49] py-12 md:py-20 pb-24 md:pb-28">
+    <section id="ventures" className="bg-[#082b49] py-12 md:py-20 pb-24 md:pb-28 scroll-mt-24">
       <div className="mx-auto w-full max-w-[1200px]">
         <header className="px-4 sm:px-6 md:px-8 mb-10 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-widest bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">

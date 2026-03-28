@@ -1,7 +1,7 @@
 // src/app/ventures/vrindavan-restaurant/MenuHighlights.tsx
 const categories = [
   "Traditional Thali",
-  "Special Biryani",
+  "Chef's Specials",
   "South Indian Delicacies",
   "Chinese Cuisine",
   "Sweets & Desserts",

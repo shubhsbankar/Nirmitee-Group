@@ -7,14 +7,14 @@ import WhyChooseSection from "./WhyChooseSection";
 import ContactSection from "./ContactSection";
 
 
-export default function NirmitteeDevelopersPage() {
+export default function NirmiteeDevelopersPage() {
   const pageUrl = "https://nirmiteegroup.com/ventures/developers";
   const heroImg = "https://nirmiteegroup.com/images/nirmittee-developers-banner.jpg";
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Nirmittee Developers",
+    name: "Nirmitee Developers",
     url: pageUrl,
     logo: "https://nirmiteegroup.com/logo.png",
     description:
@@ -35,8 +35,8 @@ export default function NirmitteeDevelopersPage() {
   return (
     <>
       <SEO
-        title="Nirmittee Developers | Premium Real Estate in Yavatmal"
-        description="Nirmittee Developers – Building dreams into reality with premium real estate projects in Yavatmal since 2015. Explore residential, commercial, and quality construction services."
+        title="Nirmitee Developers | Premium Real Estate in Yavatmal"
+        description="Nirmitee Developers – Building dreams into reality with premium real estate projects in Yavatmal since 2015. Explore residential, commercial, and quality construction services."
         url={pageUrl}
         image={heroImg}
         structuredData={schema}

@@ -95,11 +95,6 @@ export default function Hero() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 -z-10" />
 
-      {/* Badge */}
-      <div className="px-4 py-1 mb-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-sm text-cyan-300">
-        Best Digital Group of 2024
-      </div>
-
       {/* Heading */}
       <h1 className="mb-2 font-extrabold tracking-tight leading-[1.05] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white">
         <span className="block">One Group.</span>
@@ -110,20 +105,20 @@ export default function Hero() {
 
       {/* Subheading */}
       <p className="mt-3 md:mt-4 text-lg max-w-2xl text-gray-300">
-        From real estate to restaurants, Nirmittee leads 8 successful ventures
+        From real estate to restaurants, Nirmitee leads 8 successful ventures
         under one vision.
       </p>
 
       {/* CTAs */}
       <div className="relative z-10 mt-6 mb-8 md:mb-[200px] lg:mb-[240px] flex gap-4">
         <Link
-          href="/ventures"
+          href="/#ventures"
           className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium shadow-lg shadow-blue-500/30 hover:scale-105 transition-transform"
         >
           Explore Our Ventures →
         </Link>
         <Link
-          href="/contact"
+          href="/#contact"
           className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-black transition-colors"
         >
           Contact Head Office

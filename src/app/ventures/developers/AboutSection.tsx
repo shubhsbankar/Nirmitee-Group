@@ -50,7 +50,7 @@ export default function AboutDevelopers() {
         >
           <div className="inline-block">
             <h2 className="relative text-4xl md:text-5xl font-extrabold text-white leading-tight">
-              <span className="gradient-text">About</span> Nirmittee Developers
+              <span className="gradient-text">About</span> Nirmitee Developers
               <motion.span
                 aria-hidden="true"
                 initial={{ width: 0, opacity: 0 }}
@@ -66,7 +66,7 @@ export default function AboutDevelopers() {
             <p>
               For over{" "}
               <span className="text-cyan-300 font-semibold">{years}+ years</span>, 
-              Nirmittee Developers has been synonymous with quality construction 
+              Nirmitee Developers has been synonymous with quality construction 
               and customer satisfaction in Yavatmal.
             </p>
             <p>
@@ -121,7 +121,7 @@ export default function AboutDevelopers() {
                           glass-card shadow-[0_15px_50px_rgba(0,0,0,0.35)]">
             <Image
               src="/images/developers/about.png"
-              alt="Modern commercial towers — Nirmittee Developers, Yavatmal"
+              alt="Modern commercial towers — Nirmitee Developers, Yavatmal"
               fill
               className="object-cover"
               sizes="(min-width: 1024px) 720px, 92vw"

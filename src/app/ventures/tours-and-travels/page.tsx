@@ -16,21 +16,21 @@ const ogImage =
   "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80";
 
 export const metadata: Metadata = {
-  title: "Nirmittee Tours & Travels | Holiday Packages & Ticketing in Yavatmal",
+  title: "Nirmitee Tours & Travels | Holiday Packages & Ticketing in Yavatmal",
   description:
     "Domestic & international tours, custom itineraries, flight/train/bus ticketing, hotel bookings, visa assistance, and corporate travel in Yavatmal.",
   alternates: { canonical: pageUrl },
   openGraph: {
     type: "website",
     url: pageUrl,
-    title: "Nirmittee Tours & Travels",
+    title: "Nirmitee Tours & Travels",
     description:
       "Holiday packages, ticketing & hotel bookings with personalized service.",
     images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nirmittee Tours & Travels",
+    title: "Nirmitee Tours & Travels",
     description:
       "Holiday packages, ticketing & hotel bookings with personalized service.",
     images: [ogImage],
@@ -41,7 +41,7 @@ export default function Page() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    name: "Nirmittee Tours & Travels",
+    name: "Nirmitee Tours & Travels",
     url: pageUrl,
     image: ogImage,
     address: {

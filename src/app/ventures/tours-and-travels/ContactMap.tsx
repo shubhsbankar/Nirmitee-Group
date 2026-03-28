@@ -14,7 +14,7 @@ export default function ContactMap() {
         </div>
         <div data-aos="fade-left" className="rounded-2xl overflow-hidden border border-white/10">
           <iframe
-            title="Nirmittee Tours & Travels location"
+            title="Nirmitee Tours & Travels location"
             src="https://www.google.com/maps?q=Yavatmal&output=embed"
             className="w-full h-72 md:h-80"
             loading="lazy"

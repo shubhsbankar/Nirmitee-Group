@@ -8,7 +8,7 @@ export default function About() {
         {/* Left content */}
         <div data-aos="fade-right">
           <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">
-            About Nirmittee Tours & Travels
+            About Nirmitee Tours & Travels
           </h2>
           <p className="mt-4 text-lg text-white/90">
             We craft domestic and international trips with transparent pricing and end-to-end support.

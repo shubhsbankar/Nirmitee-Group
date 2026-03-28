@@ -41,7 +41,7 @@ export default function Hero() {
                        bg-clip-text text-transparent text-lg sm:text-xl md:text-2xl lg:text-3xl"
                   data-aos="fade-up"
             >
-                Nirmittee Tours & Travels
+                Nirmitee Tours & Travels
           </p>
 
           <h1 className="mt-2 text-4xl md:text-6xl font-extrabold leading-tight" data-aos="fade-up" data-aos-delay={60}>

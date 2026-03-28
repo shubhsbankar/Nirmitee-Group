@@ -18,7 +18,7 @@ function Stars() {
 }
 
 const ITEMS = [
-  { quote: "“Nirmittee Developers delivered our dream home exactly as promised. Excellent quality and timely completion.”", name: "Rajesh Sharma", city: "Yavatmal" },
+  { quote: "“Nirmitee Developers delivered our dream home exactly as promised. Excellent quality and timely completion.”", name: "Rajesh Sharma", city: "Yavatmal" },
   { quote: "“Professional team, transparent dealings, and superior construction quality. Highly recommended.”", name: "Priya Patel", city: "Yavatmal" },
   { quote: "“Great coordination from booking to possession. The amenities and finishing exceeded expectations.”", name: "Ankit Verma", city: "Yavatmal" },
   { quote: "“Reliable and responsive. The craftsmanship and material quality were top-notch.”", name: "Sneha Kulkarni", city: "Yavatmal" },

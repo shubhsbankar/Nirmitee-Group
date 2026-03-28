@@ -210,10 +210,8 @@ export default function Footer() {
               <ul className="space-y-3 text-white/85">
                 <li><Link href="/ventures/developers">Nirmitee Developers</Link></li>
                 <li><Link href="/ventures/traders">Nirmitee Traders</Link></li>
-                <li><Link href="/ventures/tours-and-travels">Tours & Travels</Link></li>
                 <li><Link href="/ventures/vrindavan-restaurant">Vrindavan Restaurant</Link></li>
                 <li><Link href="/ventures/vrindavan-lawn">Vrindavan Lawn</Link></li>
-                <li><Link href="/ventures/leozkate-jewellery">Leozkate Jewellery</Link></li>
                 <li><Link href="/ventures/gulmohar-hotel">Gulmohar Hotel</Link></li>
                 <li>
                   <a

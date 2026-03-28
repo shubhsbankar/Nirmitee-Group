@@ -41,12 +41,13 @@ const values: ValueItem[] = [
 ];
 
 const achievements = [
-  { year: "2015", milestone: "Founded Nirmittee Group" },
+  { year: "2015", milestone: "Founded Nirmitee Group" },
   { year: "2017", milestone: "Launched Real Estate Division" },
   { year: "2019", milestone: "Expanded to 3 Ventures" },
   { year: "2021", milestone: "₹50Cr Revenue Milestone" },
   { year: "2023", milestone: "7 Active Business Ventures" },
   { year: "2024", milestone: "₹100Cr+ Revenue Achievement" },
+  { year: "2025", milestone: "Journey of Excellence — scaling operations and digital presence across ventures" },
 ];
 
 function TiltCard({
@@ -204,7 +205,7 @@ export default function AboutSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-montserrat font-bold text-4xl md:text-6xl text-white mb-6">
-            About <span className="gradient-text">Nirmittee Group</span>
+            About <span className="gradient-text">Nirmitee Group</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Building futures and empowering lives through strategic business ventures
@@ -230,7 +231,7 @@ export default function AboutSection() {
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 2015, Nirmittee Group has emerged as one of India&apos;s
+                  Founded in 2015, Nirmitee Group has emerged as one of India&apos;s
                   most dynamic and diversified business conglomerates. Under the visionary
                   leadership of{" "}
                   <span className="text-primary-glow font-semibold">Smeet Raut</span>, we have
@@ -243,7 +244,7 @@ export default function AboutSection() {
                   when innovation meets determination.
                 </p>
                 <p>
-                  From Dreams to Developments—Nirmittee leads the way in building a future
+                  From Dreams to Developments—Nirmitee leads the way in building a future
                   where business success and social responsibility go hand in hand.
                 </p>
               </div>
@@ -298,8 +299,9 @@ export default function AboutSection() {
             visibleBlocks.timeline ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <h3 className="font-montserrat font-bold text-3xl text-white text-center mb-12">
+          <h3 className="font-montserrat font-bold text-3xl md:text-4xl text-white text-center mb-12">
             Our Journey of <span className="gradient-text">Excellence</span>
+            <span className="text-white/85"> — 2025</span>
           </h3>
 
           {/* ---- Timeline container with animated progress line ---- */}

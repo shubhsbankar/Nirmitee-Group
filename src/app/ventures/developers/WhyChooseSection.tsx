@@ -33,7 +33,7 @@ export default function WhyChooseSection() {
           viewport={{ once: false, amount: 0.35 }} // replay on every visit
           className="text-center text-3xl md:text-4xl font-extrabold text-white"
         >
-          Why Choose Nirmittee Developers?
+          Why Choose Nirmitee Developers?
         </motion.h2>
 
         {/* 3 Columns */}

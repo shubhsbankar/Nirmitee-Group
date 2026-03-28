@@ -75,7 +75,7 @@ export default function ContactSection() {
             className="rounded-2xl overflow-hidden border border-white/10 shadow-[0_6px_24px_rgba(0,0,0,0.25)]"
           >
             <iframe
-              title="Nirmittee Developers Yavatmal location"
+              title="Nirmitee Developers Yavatmal location"
               src="https://www.google.com/maps?q=Yavatmal&output=embed"
               className="w-full h-[300px] md:h-[350px]"
               loading="lazy"

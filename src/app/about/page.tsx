@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import AboutSection from "@/components/About";
 
 export const metadata = {
-  title: "About | Nirmittee Group",
+  title: "About | Nirmitee Group",
   description:
-    "Learn more about Nirmittee Group, our mission, vision, and achievements.",
+    "Learn more about Nirmitee Group, our mission, vision, and achievements.",
 };
 
 export default function AboutPage() {

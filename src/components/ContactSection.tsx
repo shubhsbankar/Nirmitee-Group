@@ -57,7 +57,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-contact">
+    <section id="contact" className="py-24 bg-contact scroll-mt-24">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -65,7 +65,7 @@ export default function ContactSection() {
             Let&apos;s Build <span className="contact-gradient-text">Together</span>
           </h2>
           <p className="text-xl contact-text-muted max-w-3xl mx-auto mt-4">
-            Ready to explore opportunities with Nirmittee Group? Get in touch and let&apos;s
+            Ready to explore opportunities with Nirmitee Group? Get in touch and let&apos;s
             discuss how we can create value together.
           </p>
         </div>
@@ -120,7 +120,6 @@ export default function ContactSection() {
                     <SelectItem value="general">General Inquiry</SelectItem>
                     <SelectItem value="real-estate">Real Estate</SelectItem>
                     <SelectItem value="trading">Wholesale Trading</SelectItem>
-                    <SelectItem value="travel">Travel &amp; Tours</SelectItem>
                     <SelectItem value="restaurant">Restaurant</SelectItem>
                     <SelectItem value="wedding">Wedding Venue</SelectItem>
                     <SelectItem value="fashion">Nirmitee Fashion</SelectItem>

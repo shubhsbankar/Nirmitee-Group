@@ -18,7 +18,7 @@ export default function HeroSection() {
       >
         <Image
           src="/images/developers/hero-blur.png"
-          alt="Nirmittee Developers Yavatmal premium real estate"
+          alt="Nirmitee Developers Yavatmal premium real estate"
           fill
           priority
           className="object-cover"
