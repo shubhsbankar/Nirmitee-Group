@@ -184,8 +184,8 @@ export default function ContactSection() {
                 <InfoItem
                   icon={Phone}
                   title="Call Us"
-                  value="+91 98765 43210"
-                  href="tel:+919876543210"
+                  value="+91 80072 42777"
+                  href="tel:+918007242777"
                   desc="Available 24/7 for urgent inquiries"
                 />
                 <InfoItem
@@ -216,7 +216,7 @@ export default function ContactSection() {
                   <p className="contact-text-muted mb-4">Get instant assistance via WhatsApp</p>
                   <a
                     className="contact-whatsapp-btn inline-flex items-center justify-center"
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/918007242777"
                     target="_blank"
                     rel="noreferrer"
                   >

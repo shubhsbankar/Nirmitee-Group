@@ -55,7 +55,7 @@ export default function TradersPage() {
       addressCountry: "IN",
     },
     areaServed: ["Yavatmal", "Vidarbha", "Maharashtra"],
-    telephone: "+91-9876543212",
+    telephone: "+91-8007242777",
   };
 
   return (

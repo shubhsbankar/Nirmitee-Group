@@ -35,7 +35,7 @@ export default function Page() {
     image: ogImage,
     servesCuisine: ["Indian", "Vegetarian"],
     priceRange: "₹₹",
-    telephone: "+91-9876543211",
+    telephone: "+91-8007242777",
     address: { "@type": "PostalAddress", streetAddress: "Main Road", addressLocality: "Yavatmal", addressRegion: "MH", postalCode: "445001", addressCountry: "IN" }
   };
 

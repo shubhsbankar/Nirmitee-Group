@@ -14,7 +14,7 @@ export default function HoursBooking() {
         <div data-aos="fade-left" className="rounded-2xl border border-white/10 p-6 bg-white/5">
           <h3 className="text-2xl font-semibold">Book Your Table</h3>
           <p className="mt-2 text-white/80">Reserve for special occasions, family dinners, or corporate events.</p>
-          <a href="tel:+919876543211" className="inline-block mt-6 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500">Call to Reserve</a>
+          <a href="tel:+918007242777" className="inline-block mt-6 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500">Call to Reserve</a>
         </div>
       </div>
     </section>

@@ -51,7 +51,7 @@ const orgJsonLd = {
     postalCode: "445001",
     addressCountry: "IN",
   },
-  telephone: "+91-9876543212",
+  telephone: "+91-8007242777",
 };
 
 // Simple breadcrumbs for the page

@@ -30,7 +30,7 @@ export default function ContactSection() {
             >
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-sky-400" />
-                <span>+91-9876543210</span>
+                <span>+91 80072 42777</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-sky-400" />
@@ -50,13 +50,13 @@ export default function ContactSection() {
               className="mt-6 flex gap-4"
             >
               <a
-                href="tel:+919876543210"
+                href="tel:+918007242777"
                 className="px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition"
               >
                 📞 Call Now
               </a>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/918007242777"
                 className="px-5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium transition"
                 target="_blank"
                 rel="noopener noreferrer"

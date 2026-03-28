@@ -51,7 +51,7 @@ export default function Page() {
       postalCode: "445001",
       addressCountry: "IN",
     },
-    telephone: "+91-9876543213",
+    telephone: "+91-8007242777",
     areaServed: "IN",
   };
 

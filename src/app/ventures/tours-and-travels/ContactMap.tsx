@@ -5,11 +5,11 @@ export default function ContactMap() {
       <div className="mt-6 grid md:grid-cols-2 gap-8 items-start">
         <div className="space-y-3" data-aos="fade-right">
           <p className="text-white/90">📍 Main Road, Yavatmal, Maharashtra 445001</p>
-          <p className="text-white/90">📞 +91-9876543213</p>
+          <p className="text-white/90">📞 +91 80072 42777</p>
           <p className="text-white/90">✉️ tours@nirmitteegroup.com</p>
           <div className="pt-2 flex flex-wrap gap-3">
-            <a href="tel:+919876543213" className="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500">Call Now</a>
-            <a href="https://wa.me/919876543213" className="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20">WhatsApp</a>
+            <a href="tel:+918007242777" className="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500">Call Now</a>
+            <a href="https://wa.me/918007242777" className="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20">WhatsApp</a>
           </div>
         </div>
         <div data-aos="fade-left" className="rounded-2xl overflow-hidden border border-white/10">
