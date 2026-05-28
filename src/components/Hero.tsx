@@ -67,7 +67,7 @@ export default function Hero() {
         md:h-screen
         flex flex-col items-center text-center text-white bg-midnight
         overflow-visible md:overflow-hidden
-        pt-28 md:pt-32 pb-32 md:pb-0
+        pt-28 md:pt-32 pb-14 md:pb-16
       "
     >
       {/* ✅ Navbar overlays the hero only */}
@@ -108,7 +108,7 @@ export default function Hero() {
       </p>
 
       {/* CTAs */}
-      <div className="relative z-10 mt-6 mb-8 md:mb-[200px] lg:mb-[240px] flex gap-4">
+      <div className="relative z-10 mt-6 mb-10 md:mb-12 flex flex-col sm:flex-row gap-4">
         <Link
           href="/#ventures"
           className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium shadow-lg shadow-blue-500/30 hover:scale-105 transition-transform"
@@ -127,16 +127,17 @@ export default function Hero() {
       <div
         ref={statsRef}
         className="
-          mt-4 w-full px-4
-          flex flex-col md:flex-row md:flex-wrap gap-4 md:gap-6 items-center md:justify-center
-          md:absolute md:bottom-5 md:left-1/2 md:-translate-x-1/2
+          w-full px-4
+          grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-6
+          items-stretch justify-items-center
+          max-w-5xl
         "
       >
         {/* 1: Ventures */}
         <div
           className="
             bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-2xl border border-white/10 shadow-lg
-            flex flex-col items-center w-full md:w-64 py-6
+            flex flex-col items-center w-full py-6
             animate-fadeup hover:scale-105 hover:shadow-cyan-500/30 transition-all duration-300
           "
           style={{ animationDelay: `0s` }}
@@ -150,7 +151,7 @@ export default function Hero() {
         <div
           className="
             bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-2xl border border-white/10 shadow-lg
-            flex flex-col items-center w-full md:w-64 py-6
+            flex flex-col items-center w-full py-6
             animate-fadeup hover:scale-105 hover:shadow-cyan-500/30 transition-all duration-300
           "
           style={{ animationDelay: `0.2s` }}
