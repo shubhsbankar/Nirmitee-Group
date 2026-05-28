@@ -73,13 +73,13 @@ const ventures: Venture[] = [
     align: 'left',
   },
   {
-    id: 'gulmohar-hotel',
-    kicker: 'HOSPITALITY • STAYS',
-    title: 'Gulmohar Hotel',
+    id: 'shivtara-restaurant-lodging',
+    kicker: 'DINING • LODGING',
+    title: 'Shivtara Restaurant & Lodging',
     blurb:
-      'Thoughtfully designed rooms and event spaces with warm service for business and leisure travelers.',
+      'Premium restaurant and comfortable lodging with warm service — bookings and rooms coming soon.',
     ctaText: 'Explore More',
-    href: '/ventures/gulmohar-hotel',
+    href: '/ventures/shivtara-restaurant-lodging',
     imgSrc:
       'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1400&q=80',
     align: 'right',

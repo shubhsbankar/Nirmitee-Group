@@ -212,7 +212,7 @@ export default function Footer() {
                 <li><Link href="/ventures/traders">Nirmitee Traders</Link></li>
                 <li><Link href="/ventures/vrindavan-restaurant">Vrindavan Restaurant</Link></li>
                 <li><Link href="/ventures/vrindavan-lawn">Vrindavan Lawn</Link></li>
-                <li><Link href="/ventures/gulmohar-hotel">Gulmohar Hotel</Link></li>
+                <li><Link href="/ventures/shivtara-restaurant-lodging">Shivtara Restaurant &amp; Lodging</Link></li>
                 <li>
                   <a
                     href="https://fashion.nirmiteegroup.com/"

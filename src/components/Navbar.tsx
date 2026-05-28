@@ -11,7 +11,7 @@ const ventures = [
   { name: "Nirmitee Developers", path: "/ventures/developers" },
   { name: "Nirmitee Traders", path: "/ventures/traders" },
   { name: "Vrindavan Restaurant", path: "/ventures/vrindavan-restaurant" },
-  { name: "Gulmohar Hotel", path: "/ventures/gulmohar-hotel" },
+  { name: "Shivtara Restaurant & Lodging", path: "/ventures/shivtara-restaurant-lodging" },
   { name: "Nirmitee Fashion", path: "https://fashion.nirmiteegroup.com/", external: true },
 ];
 

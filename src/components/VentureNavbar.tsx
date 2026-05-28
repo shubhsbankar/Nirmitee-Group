@@ -11,7 +11,7 @@ const ventures = [
   { name: "Nirmitee Traders", path: "/ventures/traders" },
   { name: "Vrindavan Restaurant", path: "/ventures/vrindavan-restaurant" },
   { name: "Vrindavan Lawn", path: "/ventures/vrindavan-lawn" },
-  { name: "Gulmohar Hotel", path: "/ventures/gulmohar-hotel" },
+  { name: "Shivtara Restaurant & Lodging", path: "/ventures/shivtara-restaurant-lodging" },
   { name: "Nirmitee Fashion", path: "https://fashion.nirmiteegroup.com/", external: true },
 ];
 
@@ -65,12 +65,12 @@ const BRAND: Record<string, {
     ctaText: "Plan a Trip",
     ctaHref: "/ventures/tours-and-travels#contact",
   },
-  "/ventures/gulmohar-hotel": {
-    label: "Gulmohar Hotel",
-    logo: "/images/logos/gulmohar.png",
-    home: "/ventures/gulmohar-hotel",
-    ctaText: "Notify Me",
-    ctaHref: "/ventures/gulmohar-hotel",
+  "/ventures/shivtara-restaurant-lodging": {
+    label: "Shivtara Restaurant & Lodging",
+    logo: "/images/logos/group.png",
+    home: "/ventures/shivtara-restaurant-lodging",
+    ctaText: "Enquire",
+    ctaHref: "/ventures/shivtara-restaurant-lodging#contact",
   },
 };
 
