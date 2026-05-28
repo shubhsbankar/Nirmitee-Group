@@ -4,7 +4,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { Building2, Users, IndianRupee } from "lucide-react";
+import { Building2, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 
 /** Observe once: flips to true the first time target enters the viewport */
@@ -57,9 +57,8 @@ export default function Hero() {
   const { ref: statsRef, inView } = useInViewOnce<HTMLDivElement>({ threshold: 0.35 });
 
   // Counters (targets based on your labels)
-  const ventures = useCounter(8, inView);
-  const employees = useCounter(500, inView);
-  const crore = useCounter(100, inView); // display as ₹{crore}Cr+
+  const ventures = useCounter(7, inView);
+  const companies = useCounter(200, inView);
 
   return (
     <section
@@ -105,8 +104,7 @@ export default function Hero() {
 
       {/* Subheading */}
       <p className="mt-3 md:mt-4 text-lg max-w-2xl text-gray-300">
-        From real estate to restaurants, Nirmitee leads 8 successful ventures
-        under one vision.
+        From real estate to hospitality, Nirmitee leads 7 active ventures under one vision.
       </p>
 
       {/* CTAs */}
@@ -148,7 +146,7 @@ export default function Hero() {
           <p className="text-gray-300 text-sm text-center">Active Ventures</p>
         </div>
 
-        {/* 2: Employees */}
+        {/* 2: Companies */}
         <div
           className="
             bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-2xl border border-white/10 shadow-lg
@@ -159,28 +157,10 @@ export default function Hero() {
         >
           <Users size={36} className="text-cyan-300 mb-3" />
           <p className="text-3xl font-bold tabular-nums">
-            {employees}
+            {companies}
             <span className="align-super text-lg">+</span>
           </p>
-          <p className="text-gray-300 text-sm text-center">Employees</p>
-        </div>
-
-        {/* 3: Revenue */}
-        <div
-          className="
-            bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-2xl border border-white/10 shadow-lg
-            flex flex-col items-center w-full md:w-64 py-6
-            animate-fadeup hover:scale-105 hover:shadow-cyan-500/30 transition-all duration-300
-          "
-          style={{ animationDelay: `0.4s` }}
-        >
-          <IndianRupee size={36} className="text-cyan-300 mb-3" />
-          <p className="text-3xl font-bold tabular-nums">
-            ₹{crore}
-            <span className="mx-1">Cr</span>
-            <span className="align-super text-lg">+</span>
-          </p>
-          <p className="text-gray-300 text-sm text-center">Revenue</p>
+          <p className="text-gray-300 text-sm text-center">Companies Served</p>
         </div>
       </div>
     </section>

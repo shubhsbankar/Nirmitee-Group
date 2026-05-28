@@ -41,13 +41,11 @@ const values: ValueItem[] = [
 ];
 
 const achievements = [
-  { year: "2015", milestone: "Founded Nirmitee Group" },
-  { year: "2017", milestone: "Launched Real Estate Division" },
-  { year: "2019", milestone: "Expanded to 3 Ventures" },
-  { year: "2021", milestone: "₹50Cr Revenue Milestone" },
-  { year: "2023", milestone: "7 Active Business Ventures" },
-  { year: "2024", milestone: "₹100Cr+ Revenue Achievement" },
-  { year: "2025", milestone: "Journey of Excellence — scaling operations and digital presence across ventures" },
+  { year: "2022", milestone: "Nirmitee Group Traders" },
+  { year: "2024", milestone: "Vrindavan Restaurant" },
+  { year: "2025", milestone: "Nirmitee Fashion" },
+  { year: "2026", milestone: "Vrindavan Lawn" },
+  { year: "2026", milestone: "Shivtara Restaurant & Lodging" },
 ];
 
 function TiltCard({
@@ -301,7 +299,7 @@ export default function AboutSection() {
         >
           <h3 className="font-montserrat font-bold text-3xl md:text-4xl text-white text-center mb-12">
             Our Journey of <span className="gradient-text">Excellence</span>
-            <span className="text-white/85"> — 2025</span>
+            <span className="text-white/85"> — 2022 to 2026</span>
           </h3>
 
           {/* ---- Timeline container with animated progress line ---- */}
